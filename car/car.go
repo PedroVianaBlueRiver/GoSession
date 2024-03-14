@@ -10,10 +10,12 @@ type Car struct {
 	Price float32
 }
 
+//function  for creating the instance of the struct
 func NewCar(brand, model string, year int, price float32) Car {
 	return Car{Brand: brand, Model: model, Year: year, Price: price}
 }
 
+//function for adding new item to Car map
 func AddListCarMap(list map[int]Car, idKey int, item Car) (map[int]Car, bool, string) {
 	if _, ok := list[idKey]; ok {
 		return list, false, fmt.Sprintf("Car with id %v already exists", idKey)
