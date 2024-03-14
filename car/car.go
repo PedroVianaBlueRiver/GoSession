@@ -2,6 +2,7 @@ package car
 
 import "fmt"
 
+//it is necessary to use Uppercase for the fields for accessing to them from other files
 type Car struct {
 	Brand string
 	Model string
